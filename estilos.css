@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/*el encabezado de la pagina*/
+header{
+    background-color: black;
+    min-height: 160px;
+    
+    padding: 5px;
+    overflow-wrap: unset;
+    border-bottom: 3px solid #8d1111;
+   
+}
+
+.contenedor-flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+    
+.contenedor-flex-1 a{
+    text-decoration: none;
+    color: rgb(230, 255, 9);
+}
+.contenedor-flex-1 a .titulo{
+    width: 1.2em;
+   height: 90px;
+    
+
+}
+.contenedor-flex-1 a h2:hover{
+    color: tomato;
+}
+
+.contenedor-flex-1 .item{
+   float: left;
+   
+}
+.contenedor-flex-1 ul a:hover{
+    color: tomato;
+
+}
+.contenedor-flex-1 ul a:active{
+    color: blue;
+}
+.contenedor-flex-1 .item{
+    list-style-type: none;
+    padding-right: 20px;
+}
+.contenedor-flex-1 .item a{
+    
+    text-decoration: none;
+    color: white;
+    font: bold 1.5em arial, helvetica, sans-serif;
+}
+
+.contenedor-flex-1 .desple{
+    display: none;
+    position: absolute;
+    padding-right: 10px ;
+    overflow: auto;
+   
+    
+}
+
+.contenedor-flex-1 .item:hover .desple{
+    display: block;
+    background-color: black;    
+}
+
+/*banner*/
+
+#banner{
+    min-height: 500px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/gamer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% ;
+    
+}
+
+#banner h1{
+    font-weight: normal;
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 0;
+    padding-top: 80px;
+    transform: scale(1, 1.1);
+}
+
+.ancho-contenido-banner{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ancho-contenido-banner p{
+    color: white;
+    font-size: 1.6em;
+}
+
+/*cuota*/
+
+.cuota{
+    background-color: #070707;
+    color: white;
+    min-height: 140px;
+    font-style: italic;
+    font-family: Palatino, Georgia, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.cuota span{
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+
+.cuota a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.4em;
+    background-color: #ad1c24;
+    border-radius: 16px;
+    padding: 5px 12px 5px 12px;
+}
+
+/*servicios*/
+
+.contenedor-flex-2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 3, 3);
+
+}
+
+.contenedor-flex-2 div{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+.contenedor-flex-2 div h2 a{
+    text-decoration: none;
+    color: rgb(17, 85, 231);
+}
+.contenedor-flex-2 div h2 a:hover{
+    color: #ad1c24 ;
+    border: 1px solid rgb(17, 85, 231);
+    padding: 2px;
+}
+.contenedor-flex-2 div a img{
+    width: 60%;
+}
+/*pie de pagina*/
+footer{
+    text-align: center;
+    font-size: 1.5em;
+    border-top: 3px solid #fc0000;
+    background-color: #ad1c24;
+    color: white;
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+
+/*...NOSOTROS...*/
+
+.seccion-nosotros-1{
+    text-align: center;
+    width: 90%;
+    background-color: #ad1c24;
+    margin: 4% auto 4% auto;
+    padding: 3% 0 3% 0;
+    
+}
+
+.seccion-nosotros-1 span{
+    color: white;
+    font-size: 30px;
+    border: 3px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+.seccion-nosotros-2{
+    text-align: center;
+    margin: 4% auto 4% auto;
+    width: 90%;
+}
+
+.seccion-nosotros-2 span{
+    font-size: 30px;
+    font-style: italic;
+    font-family: palatino, georgia, serif;
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:768px){
+    .contenedor-flex-1{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #banner{
+        min-height: 1vm;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/gamer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 100% unset;
+    height: 1vm;
+    
+    }
+
+    .contenedor-flex-2{
+        flex-wrap: wrap;
+    }
+
+    .equipo{
+        display: none;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "valores"
+        "mision"
+        "vision";
+        
+    }
+
+    .contenedor-formulario{
+        width: 65%;
+    }
+
+    .boton{
+        font-size: 1.3em;
+        padding: 5px 30px;
+    }
+}
+
